@@ -6,9 +6,11 @@
   background-color: rgb(70, 70, 70);
   min-width: 0;
   text-align: center;
+  flex-basis: 0;
 }
 
 #forecast-container div {
   align-items: baseline;
   padding: 0rem 1.2rem;
+  flex-basis: 0;
 }

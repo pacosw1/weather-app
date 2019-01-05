@@ -6,7 +6,7 @@
 }
 
 ::placeholder {
-  color: white;
+  color: black;
 }
 
 /* width */
@@ -62,8 +62,144 @@ body {
   background-color: #2f2f2f;
   border: 10px solid;
   border-color: red;
+  margin: 0rem 2rem;
 }
 
-.sidebar {
+#sidebar {
+  margin: 0;
   background-color: #161414;
+}
+
+.cc {
+  display: flex;
+}
+
+.wind {
+  display: flex;
+  border: 5px solid;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.wind div {
+  padding: 0rem;
+  border-color: grey;
+}
+
+#main {
+  flex-grow: 4;
+}
+
+#sidebar {
+  flex-grow: 1;
+  text-align: center;
+}
+
+#forecasts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#forecasts * {
+  flex: 1;
+  flex-grow: 1;
+  margin: 0.5rem;
+  padding: 2rem;
+}
+
+.forecast {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-item {
+  margin: 0rem 2rem;
+}
+
+#search * {
+  border-style: none;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+#search {
+  padding: 1rem 0rem;
+}
+
+#header {
+  padding: 1.2rem 0rem;
+}
+#search input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: 0;
+}
+
+#search button {
+  margin: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+}
+.side-item {
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  #sidebar {
+    display: none;
+  }
+
+  #alerts {
+    display: none;
+  }
+
+  #forecast-details * {
+    margin: 2rem;
+  }
+}
+@media screen and (max-width: 1400px) {
+  #sidebar {
+    display: flex;
+    flex-direction: row;
+    margin: 0rem 2rem;
+  }
+  .side-item {
+    display: flex;
+    flex-direction: row;
+  }
+  .side-item * {
+    margin: 0rem 1rem;
+  }
+}
+
+#mainDisplay {
+  display: flex;
+  padding: 2rem 0rem;
+}
+
+#forecast-details {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: wrap-reverse;
+  padding: 0.3rem 2rem;
+  border-radius: 0.4rem;
+}
+#forecast-details * {
+  margin: 0rem 2rem;
+}
+
+#alerts {
+  flex-grow: 4;
 }
