@@ -1,0 +1,14 @@
+.top-row {
+  background-color: #222222;
+}
+
+#forecast-container {
+  background-color: rgb(70, 70, 70);
+  min-width: 0;
+  text-align: center;
+}
+
+#forecast-container div {
+  align-items: baseline;
+  padding: 0rem 1.2rem;
+}

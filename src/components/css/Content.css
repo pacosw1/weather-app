@@ -1,0 +1,19 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.list-item {
+  padding: 5rem;
+}
+
+.scroll {
+  overflow-x: scroll;
+}
+
+@media screen and (max-width: 1000px) {
+  .window {
+    flex-direction: column;
+  }
+}
